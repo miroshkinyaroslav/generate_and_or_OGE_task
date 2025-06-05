@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Условия Python</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Условия Python</h1>
+        <div class="score">
+            <div class="score-box">
+                <span>Победы:</span>
+                <span id="wins">0</span>
+            </div>
+            <div class="score-box">
+                <span>Поражения:</span>
+                <span id="losses">0</span>
+            </div>
+        </div>
+
+        <div class="game-area">
+            <div class="code-container">
+                <div class="code-column" id="code1"></div>
+                <div class="code-column" id="code2"></div>
+            </div>
+
+            <div class="pairs-container">
+                <h3>Тестовые пары (s, t):</h3>
+                <div id="pairs-display"></div>
+            </div>
+
+            <div class="answers">
+                <div class="answer-input">
+                    <label for="answer1">Количество YES (левая программа):</label>
+                    <input type="number" id="answer1" min="0" max="10">
+                </div>
+                <div class="answer-input">
+                    <label for="answer2">Количество YES (правая программа):</label>
+                    <input type="number" id="answer2" min="0" max="10">
+                </div>
+            </div>
+
+            <button id="check-btn">Проверить</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
